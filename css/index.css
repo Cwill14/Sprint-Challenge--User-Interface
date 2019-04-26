@@ -70,7 +70,26 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 75px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 25px;
+}
+#banner-img {
+    margin-bottom: 20px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
