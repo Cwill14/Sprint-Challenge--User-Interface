@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -47,23 +47,26 @@ table {
 	border-spacing: 0;
 }
 
+/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    /* font-family: 'Bangers', cursive; */
+    letter-spacing: 1px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
 }
 
-p {
-    line-height: 1.4;
+/* My code below */
+.container {
+    width: 800px;
+    margin: auto;
 }
 header {
     display: flex;
@@ -84,4 +87,53 @@ header nav a {
 }
 #banner-img {
     margin-bottom: 20px;
+}
+h2 {
+    font-size: 16pt;
+}
+.boxes {
+    display: flex;
+    flex-flow: row wrap;
+    width: 900px;
+    margin: 25px 0;
+}
+.boxes section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+}
+.boxes section h2 {
+    margin: 10px 0;
+}
+.learn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 7.5px;
+    margin-top: 10px;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+}
+
+
+.bottom {
+    margin: 25px 0;
+}
+footer {
+    width: 100%;
+    background: black;
+}
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
 }
